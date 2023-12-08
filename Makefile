@@ -6,7 +6,7 @@ all:
 	@echo
 
 version:
-	@echo "fsm_admim.__version__ == $(VERSION)"
+	@echo "fsm_admin.__version__ == $(VERSION)"
 
 help:
 	@echo " Make targets"
@@ -34,9 +34,9 @@ clean-pyc:
 
 dist: clean
 	@python setup.py -q sdist
-	@twine check dist/django-fsm-admin-${VERSION}.tar.gz
+	@twine check dist/django-fsm-admin-django-4-${VERSION}.tar.gz
 
 release: clean
 	@python setup.py -q sdist
-	@twine check dist/django-fsm-admin-${VERSION}.tar.gz
-	@twine upload dist/django-fsm-admin-$(VERSION).tar.gz
+	@twine check dist/django-fsm-admin-django-4-${VERSION}.tar.gz
+	@twine upload dist/django-fsm-admin-django-4-$(VERSION).tar.gz
