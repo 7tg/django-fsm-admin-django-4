@@ -34,9 +34,9 @@ clean-pyc:
 
 dist: clean
 	@python setup.py -q sdist
-	@twine check dist/django-fsm-admin-django-4-${VERSION}.tar.gz
+	@twine check dist/django-fsm-admin-maintained-${VERSION}.tar.gz
 
 release: clean
 	@python setup.py -q sdist
-	@twine check dist/django-fsm-admin-django-4-${VERSION}.tar.gz
-	@twine upload dist/django-fsm-admin-django-4-$(VERSION).tar.gz
+	@twine check dist/django-fsm-admin-maintained-${VERSION}.tar.gz
+	@twine upload dist/django-fsm-admin-maintained-$(VERSION).tar.gz

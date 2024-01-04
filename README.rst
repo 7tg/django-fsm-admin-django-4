@@ -1,5 +1,5 @@
-django-fsm-admin-django-4
-=========================
+django-fsm-admin-maintained
+===========================
 
 Mixin and template tags to integrate django-fsm_ state transitions into the
 Django Admin.
@@ -12,13 +12,13 @@ Installation
 
 .. code:: sh
 
-   $ pip install django-fsm-admin-django-4
+   $ pip install django-fsm-admin-maintained
 
 Or from GitHub:
 
 .. code:: sh
 
-   $ pip install -e git://github.com/7tg/django-fsm-admin-django-4.git#egg=django-fsm-admin-django-4
+   $ pip install -e git://github.com/7tg/django-fsm-admin-maintained.git#egg=django-fsm-admin-maintained
 
 Usage
 -----
@@ -58,7 +58,7 @@ override it or add additional workflow state fields with the attribute
 4. By adding ``custom=dict(admin=False)`` to the transition decorator, one can
    disallow a transition to show up in the admin interface. This specially is
    useful, if the transition method accepts parameters without default values,
-   since in **django-fsm-admin-django-4** no arguments can be passed into the transition
+   since in **django-fsm-admin-maintained** no arguments can be passed into the transition
    method.
 
 .. code:: python
@@ -95,8 +95,8 @@ Try the example
 
 .. code:: sh
 
-   $ git clone git@github.com:7tg/django-fsm-admin-django-4.git
-   $ cd django-fsm-admin-django-4
+   $ git clone git@github.com:7tg/django-fsm-admin-maintained.git
+   $ cd django-fsm-admin-maintained
    $ mkvirtualenv fsm_admin
    $ pip install -r requirements.txt
    $ python setup.py develop
